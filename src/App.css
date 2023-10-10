@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,87 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.supplier-form{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(203, 221, 221);
+}
+
+form{
+  width: 50vw;
+  border:1px ;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  border-radius: 5px;
+}
+
+input{
+  outline-color: black;
+}
+
+
+.supplier-data{
+  width: 100vw;
+  padding: 5px;
+  overflow-y: scroll;
+  height: 70vh;
+}
+
+thead{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(201, 201, 211);
+  /* color: white; */
+}
+.mandatory{
+  color: red;
+}
+
+.errors{
+  color:red;
+  font-size: small;
+  font-weight:500;  
+}
+
+.closeIcon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.deleteIcon{
+  cursor: pointer;
+}
+
+table{
+  height: calc(100vh-100px);
+  overflow: scroll;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+tr{
+  overflow-y: scroll;
+}
+tr:nth-child(even){
+  background-color: rgb(217, 238, 238);
+}
+
+.add-btn{
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width:768px) {
+  .add-btn{
+    width: 100%;
+  }
+  
 }
