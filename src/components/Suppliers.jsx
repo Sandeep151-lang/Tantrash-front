@@ -99,6 +99,7 @@ const navigate= useNavigate()
                     <input {...register('email')} 
                      onChange={(e)=>{setValue("email",e?.target?.value)
                      clearErrors('email')}}
+                     disabled={watch('id') ? true :false}
                     type="email" placeholder='Email' className="form-control" id="inputEmail4"/>       
                     {errors.email && <div className='errors'>{errors?.email?.message}</div>}
                 </div>
@@ -107,6 +108,7 @@ const navigate= useNavigate()
                     <label htmlFor="number" className="form-label">Contact Number</label>
                     <span className='mx-1 mandatory'>*</span>
                     <input {...register('number')}
+                    disabled={watch('id') ? true :false}
                      onChange={(e)=>{setValue("number",e?.target?.value)
                      clearErrors('number')}} type="number" placeholder='Contact Number' className="form-control" id="number"/>       
                     {errors.number && <div className='errors'>{errors?.number?.message}</div>}
